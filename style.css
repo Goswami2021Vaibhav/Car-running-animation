@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+}
+
+.backgroundimg {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+}
+
+.backgroundimg img {
+    background-size: cover;
+    width:100vw;
+    height: 60vh;
+
+}
+
+#track {
+    display: flex;
+    position: absolute;
+
+}
+
+#track img {
+    position: relative;
+    width: 50vw;
+    height: 40vh;
+}
+
+#car {
+    position: absolute;
+    left: 200px;
+    width: 500px;
+    /* animation: jump 1s linear infinite; */
+}
+
+#tyre {
+    position: relative;
+}
+
+#tyre1 {
+    position: absolute;
+    margin-top: 50px;
+    left: 235px;
+    width: 75px;
+}
+
+#tyre2 {
+    position: absolute;
+    left: 560px;
+    margin-top: 60px;
+    width: 65px;
+}
+
+#startbtn {
+    position: absolute;
+    top: 10px;
+}
+
+#startbtn img {
+    border-radius: 40%;
+    width: 80px;
+    cursor: pointer;
+}
+
+#audio{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    display: none;
+}
+
+
+/* ----------------key frams start-------------- */
+
+@keyframes animate {
+
+    100% {
+        transform: translateX(-500vw);
+
+    }
+
+}
+
+@keyframes rotate {
+    
+    100% {
+        transform: rotate(360deg); 
+                   
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(-2px);
+    }
+
+    50% {
+        transform: translateY(2px);
+    }
+
+    100% {
+        transform: translateY(-2px);
+    }
+}
+
+/* ----------------key frams end-------------- */

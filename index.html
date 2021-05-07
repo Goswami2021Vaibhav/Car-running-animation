@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Car runing animation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/74f06fdcd6.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <audio  controls autoplay loop id="audio">
+        <source src="music.mp3">
+    </audio>
+
+    <div id="startbtn">
+        <img src="images/start.png" onclick="start()">
+        <img src="images/stop.png" onclick="stop()">
+    </div>
+
+
+    <div class="header">
+        <div class="backgroundimg">
+            <img src="images/img3.jpg">
+            
+        </div>
+        <div id="track">
+            <img src="images/track2.jpg">
+            <img src="images/track2.jpg">
+            <img src="images/track2.jpg">
+            <img src="images/track2.jpg">
+            <img src="images/track2.jpg">
+            <img src="images/track2.jpg">
+            <img src="images/track2.jpg">
+            <img src="images/track2.jpg">
+            <img src="images/track2.jpg">
+            <img src="images/track2.jpg">
+            <img src="images/track2.jpg">
+            <img src="images/track2.jpg">
+            <img src="images/track2.jpg">
+            <img src="images/track2.jpg">
+            <img src="images/track2.jpg">
+            <img src="images/track2.jpg">
+
+        </div>
+
+        <img src="images/f1car.png" id="car">
+        <span id="tyre">
+            <img src="images/tyre.png" id="tyre1">
+            <img src="images/tyre.png" id="tyre2">
+        </span>
+    </div>
+
+
+    <!-- ------------java script start here ----------- -->
+    <script>
+        function stop() {
+            document.getElementById('tyre1').style.animation = '';
+            document.getElementById('tyre2').style.animation = '';
+            document.getElementById('track').style.animation = '';
+            document.getElementById('car').style.animation =  '';
+        }
+        function start() {
+            document.getElementById('tyre1').style.animation = 'rotate .1s linear infinite';
+            document.getElementById('tyre2').style.animation = 'rotate .1s linear infinite';
+            document.getElementById('track').style.animation = 'animate 3s linear infinite';
+            document.getElementById('car').style.animation =  'jump 1s linear infinite';
+            
+            
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>
